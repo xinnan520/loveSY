@@ -7,14 +7,100 @@ body {
 	padding: 0;
 }
 
-#imgSwiper {
-	width: 100%;
-	height: 50%;
-	position: absolute;
-	top: 20%;
+#app {
+	padding-top: 40vh;
 }
 
-.swiper {
-  /* width: 600px;
-  height: 300px; */
+.cx-time-main {
+	width: 70vw;
+	height: 20vw;
+	margin: 0 auto;
+}
+
+.cx-time-main > span {
+    width: 6vw;
+    height: 20vw;
+    line-height: 20vw;
+    float: left;
+    font-size: 6vw;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    font-family: '宋体';
+}
+
+.cx-time-main > span:last-child {
+	text-align: right;
+}
+
+.cx-time-box {
+	float: left;
+	width: calc(100% - 12vw);
+	height: 20vw;
+	margin: 0;
+	padding: 0;
+	margin-top: 10vw;
+	overflow: hidden;
+}
+
+.cx-time-bottom {
+	position: absolute;
+	top: 50%;
+	left: -30px;
+	width: 30vw;
+	min-height: 20px;
+	height: auto;
+	font-size: 5vw;
+	margin-top: 12px;
+}
+
+.cx-time-active > div {
+    color: #E59721;
+}
+
+.cx-time-round {
+	position: relative;
+	width: 2vw;
+	height: 2vw;
+	top: 50%;
+	margin-top: 0;
+	background: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.cx-time-round:hover, .cx-time-active .cx-time-round {
+    width: 2vw;
+    height: 2vw;
+    top: 49%;
+    left: -2px;
+    background: #E59721;
+}
+
+.cx-round-box {
+    position: relative;
+    width: 12vw;
+    height: 100%;
+}
+
+.cx-time-line {
+	width: 20vw !important;
+	left: -10vw !important;
+}
+
+.cx-time-line:after {
+    position: absolute;
+    content: '';
+    width: 30vw;
+    height: 2px;
+    top: 50%;
+    background: black;
+}
+
+.to {
+	background: url('../../img/zhaosiyang/to.png') no-repeat;
+	background-size: 100%;
+	width: 15vw;
+	height: 15vw;
+	margin: 5vw auto;
 }
